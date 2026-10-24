@@ -1,0 +1,33 @@
+name: phoenix_ai
+description: Phoenix AI Android assistant - v0.0.1
+publish_to: 'none'
+version: 0.0.1+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  flutter_secure_storage: ^9.2.2
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/phoenix_logo.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/phoenix_logo.png
+  adaptive_icon_background: '#0A111F'
+  adaptive_icon_foreground: assets/phoenix_logo.png
