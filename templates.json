@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "description": "Deterministic template catalog. Matching uses exact normalized feature/platform labels; no LLM fit judgement.",
+  "templates": [
+    {
+      "id": "chatbot-basic",
+      "name": "Basic Chatbot Starter",
+      "type": "chatbot",
+      "keywords": [
+        "chatbot",
+        "faq",
+        "customer support",
+        "knowledge base"
+      ],
+      "features": [
+        "text chat",
+        "faq",
+        "conversation history"
+      ],
+      "required_features": [
+        "text chat"
+      ],
+      "any_features": [
+        "faq",
+        "conversation history"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "repo_url": "https://github.com/REPLACE_WITH_YOUR_ACCOUNT/chatbot-template",
+      "branding_files": [
+        "README.md",
+        "config/branding.json"
+      ],
+      "string_replacements": {
+        "Template Chatbot": "{{client_name}} Assistant"
+      }
+    },
+    {
+      "id": "app-starter",
+      "name": "Cross-platform App Starter",
+      "type": "app",
+      "keywords": [
+        "mobile app",
+        "dashboard",
+        "authentication"
+      ],
+      "features": [
+        "login",
+        "dashboard",
+        "settings"
+      ],
+      "required_features": [
+        "login"
+      ],
+      "any_features": [
+        "dashboard",
+        "settings"
+      ],
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "repo_url": "https://github.com/REPLACE_WITH_YOUR_ACCOUNT/app-template",
+      "branding_files": [
+        "README.md",
+        "app/config/branding.json"
+      ],
+      "string_replacements": {
+        "Template App": "{{client_name}}"
+      }
+    }
+  ]
+}
